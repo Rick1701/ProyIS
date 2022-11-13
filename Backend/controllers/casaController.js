@@ -1,5 +1,5 @@
 const Casa = require('../models/casaModel');
-
+//PRUEBA
 const createCasa = (req, res) => {
     const { numero_casa } = req.body;
     const newCasa = new Casa({
