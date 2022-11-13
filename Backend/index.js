@@ -5,13 +5,16 @@ require('dotenv').config();
 
 const app = express();
 const casaRoutes = require('./routes/casaRoutes')
-
+const gastoscomunesRoutes = require('./routes/gastoscomunesRoutes')
+const propietarioRoutes = require('./routes/propietarioRoutes')
 
 app.use(cors())
 app.use(express.json());
 app.options('*', cors());
 
 app.use('/api', casaRoutes);
+app.use('/api', gastoscomunesRoutes);
+app.use('/api', propietarioRoutes);
 
 
 
