@@ -8,6 +8,7 @@ const casaRoutes = require('./routes/casaRoutes')
 const gastoscomunesRoutes = require('./routes/gastoscomunesRoutes')
 const propietarioRoutes = require('./routes/propietarioRoutes')
 
+
 app.use(cors())
 app.use(express.json());
 app.options('*', cors());
